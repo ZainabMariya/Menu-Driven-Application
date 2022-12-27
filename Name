@@ -1,0 +1,50 @@
+package group;
+
+/**
+ *
+ * @author naure
+ */
+public class Name implements Comparable<Name> {
+    private String FirstName , MidName , lastName; 
+
+public Name(String FirstName, String MidName, String lastName) {
+    this.FirstName = FirstName;
+    this.MidName = MidName;
+    this.lastName = lastName;
+}
+@Override
+public int compareTo(Name obj ) {
+    String name1 = FirstName + " " + MidName + " " + lastName ; 
+    String name2 = obj.FirstName + " " +obj.MidName + " " + obj.lastName 
+; 
+    return name1.compareTo(name2) ; 
+}
+public boolean equals(Name N ){
+    if( this.compareTo(N) == 0 )
+        return true ; 
+    else
+        return false; 
+}
+public String getFirstName() {
+    return FirstName;
+}
+public void setFirstName(String FirstName) {
+    this.FirstName = FirstName;
+}
+public String getMidName() {
+    return MidName;
+}
+public void setMidName(String MidName) {
+    this.MidName = MidName;
+}
+public String getLastName() {
+    return lastName;
+}
+public void setLastName(String lastName) {
+    this.lastName = lastName;
+}
+@Override
+public String toString() {
+    return FirstName + " " + MidName + " " + lastName ;
+}
+}
