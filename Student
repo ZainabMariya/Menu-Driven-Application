@@ -1,0 +1,68 @@
+package group;
+
+/**
+ *
+ * @author naure
+ */
+public class Student implements Comparable<Student>{
+    private int id ; 
+    private Name fullName ; 
+    private double Gpa ; 
+    private String major ; 
+    private int hours ; 
+public Student(int id, Name fullName, String major,double Gpa, int
+hours) {
+    this.id = id;
+    this.fullName = fullName;
+    this.Gpa = Gpa;
+    this.major = major;
+    this.hours = hours;
+}
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", fullName=" + fullName + ", Gpa=" + Gpa + ", major=" + major + ", hours=" + hours + '}';
+    }
+
+
+public boolean equals(Student s ){
+    if( this.id == s.id )
+    return true; 
+    else
+    return false; 
+}
+@Override
+public int compareTo(Student obj ) {
+     return this.id - obj.id ; 
+}
+public int getId() {
+    return id;
+}
+public void setId(int id) {
+    this.id = id;
+}
+public Name getFullName() {
+    return fullName;
+}
+public void setFullName(Name fullName) {
+    this.fullName = fullName;
+}
+public double getGpa() {
+    return Gpa;
+}
+public void setGpa(double Gpa) {
+    this.Gpa = Gpa;
+}
+public String getMajor() {
+    return major;
+}
+public void setMajor(String major) {
+    this.major = major;
+}
+public int getHours() {
+    return hours;
+}
+public void setHours(int hours) {
+    this.hours = hours;
+}
+}
