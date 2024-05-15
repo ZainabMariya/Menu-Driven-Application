@@ -1,0 +1,1 @@
+A menu-driven application is a type of software interface where users interact with the program through a series of menus displayed on the screen. These menus present options or commands that users can choose from to perform various tasks or operations within the application.
